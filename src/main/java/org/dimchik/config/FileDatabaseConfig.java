@@ -4,11 +4,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class FilePropertyReader implements PropertyReader {
+public class FileDatabaseConfig implements DatabaseConfig {
 
     private final Properties properties = new Properties();
 
-    public FilePropertyReader(String fileName) {
+    public FileDatabaseConfig(String fileName) {
         try (FileInputStream fileInputStream = new FileInputStream(fileName)) {
             properties.load(fileInputStream);
         } catch (IOException e) {

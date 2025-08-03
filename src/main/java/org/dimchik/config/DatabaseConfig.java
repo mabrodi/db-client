@@ -1,6 +1,6 @@
 package org.dimchik.config;
 
-public interface PropertyReader {
+public interface DatabaseConfig {
     String url();
 
     String userName();

@@ -1,10 +1,10 @@
 package org.dimchik.config;
 
-public class CommandLinePropertyReader implements PropertyReader {
+public class CommandLineDatabaseConfig implements DatabaseConfig {
 
     private final String[] args;
 
-    public CommandLinePropertyReader(String[] args) {
+    public CommandLineDatabaseConfig(String[] args) {
         this.args = args;
     }
 
